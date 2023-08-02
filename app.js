@@ -3,8 +3,8 @@ const bodyParser =  require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/blogDB");
-//replace this with connect url before deploying "mongodb+srv://<UserName>:<Password>@atlascluster.k1ilhjz.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect("mongodb+srv://<UserName>:<Password>@atlascluster.k1ilhjz.mongodb.net/?retryWrites=true&w=majority");
+//Enter your mongodb Atlas username and password.
 const PostScheme = new mongoose.Schema({
   title : String,
   content : String
