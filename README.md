@@ -1,7 +1,5 @@
 # Daily Journal [ Task Round Web Team AIC ]
 
-Link : 
-
 <h2>Description</h2>
 <span>This is a blog website made with EJS, CSS, Javascript, Node.js, Express.js, MongoDB, and Mongoose. This project is made for learning and understanding the workings of database and their use and application on websites.</span>
 
