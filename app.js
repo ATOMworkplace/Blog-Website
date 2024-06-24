@@ -3,7 +3,7 @@ const bodyParser =  require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/");
+mongoose.connect("mongodb://localhost:27017/Blogdb");
 //Enter your mongodb Atlas username and password.
 const PostScheme = new mongoose.Schema({
   title : String,
