@@ -18,32 +18,6 @@ app.get("/", function(req, res){
   });
 });
 
-app.get("/contact", function(req, res){
-  res.render("contact.ejs", {Contactcontent: contactconten, aboutcontent: aboutcontent});
-});
-
-app.get("/compose", function(req, res){
-  res.render("compose.ejs");
-});
-
-app.get("/blogs", function(req, res){
-  res.render("blogs.ejs", {blogs: []});  // Empty array as a placeholder for blogs
-});
-
-app.post("/compose", function(req, res){
-  res.redirect("/");
-});
-
-app.get("/blogs/:postId", function(req, res){
-  res.render("post.ejs", {
-    Posttitle: "Sample Title",  // Placeholder title
-    PostContent: "Sample Content"  // Placeholder content
-  });
-});
-
-app.post("/delete", function (req, res) {
-  res.redirect("/blogs");
-});
 
 app.listen(3001, function(){
   console.log("Server started on port 3001.");
