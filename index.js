@@ -18,7 +18,9 @@ const contactconten= "We love hearing from our community! If you have any questi
 const app = express();
 
 
-app.set('view engine','ejs');
+app.set("views", __dirname + "/views");
+app.set("view engine", "ejs");
+app.use(express.static(__dirname + "public"));
 
 app.use(bodyParser.urlencoded({encoded : true}));
 app.use(express.static("public"));
